@@ -67,7 +67,7 @@ class _LoginScreenState extends State<LoginScreen> {
       color: Colors.transparent,
       child: MaterialButton(
         shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(15)),
-        color: Colors.green,
+        color:  Color.fromARGB(255, 0, 145, 5),
         padding: const EdgeInsets.fromLTRB(20, 15, 20, 15),
         minWidth: MediaQuery.of(context).size.width,
         onPressed: () {
@@ -92,7 +92,7 @@ class _LoginScreenState extends State<LoginScreen> {
             child: ListView(
                padding: const EdgeInsets.only(left: 20,right: 15,top: 10),
               children: [
-                const Text('Login',textAlign: TextAlign.center,style: const TextStyle(fontSize: 28,color: Colors.green),
+                const Text('Login',textAlign: TextAlign.center,style: const TextStyle(fontSize: 28,color:  Color.fromARGB(255, 0, 145, 5),),
                  ),
                   const SizedBox(height: 40,),
 
@@ -134,7 +134,7 @@ class _LoginScreenState extends State<LoginScreen> {
                           style: TextStyle(
                             fontWeight: FontWeight.bold,
                             fontSize: 15,
-                            color: Colors.green,
+                            color:  Color.fromARGB(255, 0, 145, 5),
                           ),
                         ),
                       ),
