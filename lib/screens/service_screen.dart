@@ -1,5 +1,6 @@
 import 'dart:ui';
 
+import 'package:care_spot_pro/screens/homepage_screen.dart';
 import 'package:flutter/material.dart';
 
 class ServiceScreen extends StatefulWidget {
@@ -91,27 +92,30 @@ class _ServiceScreenState extends State<ServiceScreen> {
               height: 40,
               width: 40,
             ),
-           // onPressed. () {
-            // Navigator.push(context, MaterialPageRoute(builder: ((context) => 
-            // const HomepageScreen)));
-          //  }
+          //  onPressed. () {
+          //   Navigator.push(context, MaterialPageRoute(builder: ((context) => 
+          //   const HomePage)));
+          // }
     
     
               const SizedBox(height: 75,),
-            Container(
-              child: const Center(
-                child: Text(
-                  'Continue',
-                  textAlign: TextAlign.right,
-                  style: TextStyle(color: Colors.white, fontSize: 15,),
-                  ),
+            InkWell(
+              onTap: () => Navigator.of(context).push(MaterialPageRoute(builder: (context) => HomePage())),
+              child: Container(
+                child: const Center(
+                  child: Text(
+                    'Continue',
+                    textAlign: TextAlign.right,
+                    style: TextStyle(color: Colors.white, fontSize: 20,fontWeight: FontWeight.bold),
+                    ),
+                ),
+                decoration: BoxDecoration(
+                  borderRadius: BorderRadius.circular(10),
+                  color: const Color.fromARGB(255, 0, 211, 7),
+                ),
+                height: 50,
+                width: 40,
               ),
-              decoration: BoxDecoration(
-                borderRadius: BorderRadius.circular(10),
-                color: const Color.fromARGB(255, 0, 145, 5),
-              ),
-              height: 40,
-              width: 40,
             ),
             
             SizedBox(height: 40,),

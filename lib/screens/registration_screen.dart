@@ -1,5 +1,5 @@
-import 'package:care_spot_pro/form_field.dart';
-import 'package:care_spot_pro/service_screen.dart';
+import 'package:care_spot_pro/screens/form_field.dart';
+import 'package:care_spot_pro/screens/service_screen.dart';
 import 'package:flutter/material.dart';
 
 class RegistrationScreen extends StatefulWidget {
@@ -34,7 +34,7 @@ class _RegistrationScreenState extends State<RegistrationScreen> {
         height: 50,
         child: MaterialButton(
           shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(15)),
-          color:  Color.fromARGB(255, 0, 145, 5),
+          color:  Color.fromARGB(255, 0, 211, 7),
           onPressed: () {
             Navigator.push(context, MaterialPageRoute(builder: (context) => 
             const ServiceScreen()));
