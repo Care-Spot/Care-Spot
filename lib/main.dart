@@ -1,7 +1,9 @@
-import 'package:care_spot_pro/login_screen.dart';
+import 'package:care_spot_pro/screens/login_screen.dart';
 import 'package:flutter/material.dart';
-import 'service_screen.dart';
-import 'registration_screen.dart';
+import 'screens/service_screen.dart';
+import 'screens/registration_screen.dart';
+import 'screens/splash_screen.dart';
+
 void main() {
   runApp(const MyApp());
 }
@@ -16,9 +18,10 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       title: 'Care spot Screen',
       theme: ThemeData(
-        primarySwatch: Colors.lightGreen,
+        primarySwatch: Colors.green,
       ),
       home: const LoginScreen(),
+      
     );
   }
 }

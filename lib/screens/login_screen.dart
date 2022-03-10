@@ -1,5 +1,6 @@
-import 'package:care_spot_pro/registration_screen.dart';
-import 'package:care_spot_pro/service_screen.dart';
+import 'package:care_spot_pro/screens/homepage_screen.dart';
+import 'package:care_spot_pro/screens/registration_screen.dart';
+import 'package:care_spot_pro/screens/service_screen.dart';
 import 'package:flutter/material.dart';
 
 class LoginScreen extends StatefulWidget {
@@ -67,12 +68,12 @@ class _LoginScreenState extends State<LoginScreen> {
       color: Colors.transparent,
       child: MaterialButton(
         shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(15)),
-        color: Colors.green,
+        color:  Color.fromARGB(255, 0, 211, 7),
         padding: const EdgeInsets.fromLTRB(20, 15, 20, 15),
         minWidth: MediaQuery.of(context).size.width,
         onPressed: () {
-        // Navigator.push(context,   MaterialPageRoute(builder: (context) => 
-        //   const ServiceScreen()));
+            Navigator.push(context, MaterialPageRoute(builder: (context) =>
+            const HomePage()));
         },
         child: const Text(
           'Log In',
@@ -87,15 +88,16 @@ class _LoginScreenState extends State<LoginScreen> {
       child: Scaffold(
         backgroundColor: Colors.white,
         body: Center(
-          child: Container(
+          child: 
+          Container(
             height: 400,
             child: ListView(
                padding: const EdgeInsets.only(left: 20,right: 15,top: 10),
               children: [
-                const Text('Login',textAlign: TextAlign.center,style: const TextStyle(fontSize: 28,color: Colors.green),
+                const Text('Login',textAlign: TextAlign.center,style: const TextStyle(fontSize: 28,color:  Color.fromARGB(255, 0, 145, 5),),
                  ),
                   const SizedBox(height: 40,),
-
+          
                  
             Form(
               key: _formKey,
@@ -134,7 +136,7 @@ class _LoginScreenState extends State<LoginScreen> {
                           style: TextStyle(
                             fontWeight: FontWeight.bold,
                             fontSize: 15,
-                            color: Colors.green,
+                            color:  Color.fromARGB(255, 0, 145, 5),
                           ),
                         ),
                       ),

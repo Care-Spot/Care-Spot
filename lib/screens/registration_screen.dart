@@ -1,5 +1,5 @@
-import 'package:care_spot_pro/form_field.dart';
-import 'package:care_spot_pro/service_screen.dart';
+import 'package:care_spot_pro/screens/form_field.dart';
+import 'package:care_spot_pro/screens/service_screen.dart';
 import 'package:flutter/material.dart';
 
 class RegistrationScreen extends StatefulWidget {
@@ -30,34 +30,37 @@ class _RegistrationScreenState extends State<RegistrationScreen> {
     //signUp Page
     final signUpButton = Material(
       color: Colors.transparent,
-      child: MaterialButton(
-        shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(15)),
-        color: Colors.green,
-        padding: const EdgeInsets.fromLTRB(20, 15, 20, 15),
-        minWidth: MediaQuery.of(context).size.width,
-        onPressed: () {
-          Navigator.push(context, MaterialPageRoute(builder: (context) => 
-          const ServiceScreen()));
-        },
-        child: const Text(
-          'Sign Up',
-          textAlign: TextAlign.center,
-          style: TextStyle(
-              color: Colors.white, fontSize: 20, fontWeight: FontWeight.bold),
+      child: SizedBox(
+        height: 50,
+        child: MaterialButton(
+          shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(15)),
+          color:  Color.fromARGB(255, 0, 211, 7),
+          onPressed: () {
+            Navigator.push(context, MaterialPageRoute(builder: (context) => 
+            const ServiceScreen()));
+          },
+          child: const Text(
+            'Sign Up',
+            textAlign: TextAlign.center,
+            style: TextStyle(
+                color: Colors.white, fontSize: 20, fontWeight: FontWeight.bold),
+          ),
         ),
       ),
     );
 
     return Scaffold(
-        // backgroundColor: Color.fromRGBO(84, 84, 84, 0.8),
         appBar: AppBar(
           backgroundColor: Colors.transparent,
+          iconTheme: const IconThemeData(
+            color: Colors.black
+          ),
           elevation: 0.0,
         ),
         body: ListView(
           padding: const EdgeInsets.only(left: 20, right: 20),
           children: [
-            const Text('Register',textAlign: TextAlign.center,style: TextStyle(fontSize: 28,color: Colors.green),),
+            const Text('Register',textAlign: TextAlign.center,style: TextStyle(fontSize: 28,color: Color.fromARGB(255, 0, 145, 5)),),
             const SizedBox(height: 40,),
             Row(
               // mainAxisAlignment: MainAxisAlignment.spaceBetween,
